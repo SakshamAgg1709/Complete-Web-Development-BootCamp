@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--Our HTML code starts here-->
+<html lang="en">
+   <!-- Our Head tag Starts here -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="This is description">
+    <meta name="keywords" content="html , html tutorials,web development">
+    <meta name="robots" content ="INDEX,FOLLOW"  >
+    <title>Tutorial</title>
+    <!-- This is how we include external css -->
+    <link rel ="stylesheet" href="Tutorial.css">
+    <!-- This is how we include external Javascript -->
+    <script src="Tutorial.js"></script>
+</head>
+<!--Our BODY tag starts here-->
+<body>
+ <h1>HI! </h1>
+
+ <p>This is my web development bootcamp 
+
+    <!-- lorem40 is used to get a paragraph of 40 words -->
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis veniam cum neque. Quo tenetur quibusdam fuga accusantium<strong> voluptatum</strong> quasi neque voluptates veritatis placeat hic, illo error eos, quis excepturi magni! ipsum dolor sit.</p>
+    <br>
+    
+    Here is a next line
+ <!-- Here i use p*4  -->
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, rerum.</p>
+ <hr><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias libero rerum, nihil aspernatur voluptatibus dolore?</p>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi numquam necessitatibus.</p>
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, doloribus! Adipisci unde cum modi molestias fugit voluptatibus qui hic molestiae.</p>
+ <!-- ctrl+enter to jump on new line --> 
+ <a href="https://google.com" target ="_blank">Go to google</a><br>
+ <a href="https://linkedin.com" target ="_blank">Go to linked in</a><br>
+ <a href="https://facebook.com" target ="_blank">Go to facebook</a><br>
+ <a href="https://youtube.com" target ="_blank">Go to youtube</a><br>
+ <a href="/Saksham Aggarwal.htm" target ="_blank">Go to Saksham Aggrawal</a><br>
+
+ <!-- Image is not present hence alt attribute is used  -->
+ <img src="saksham.jpg"alt="ERROR in the image "> 
+ <!-- height and width can be changed within the source -->
+ <img src="https://source.unsplash.com/100x90/?nature,water"   alt="ERROR in the image ">
+
+ <ul type ="square">
+<li>First</li>
+<li>Second </li>
+<li>Third </li>
+<li>Fourth</li>
+<li>Fifth</li>
+</ul>
+<!-- here we have used nested list -->
+<ol type ="A">
+    <li>First</li>
+    <li>Second </li>
+    <li>
+<ul>
+<li>
+    ANoher one
+</li>
+<li>
+    ANoher one
+</li>
+    </ul>
+</li>
+    <li>Fourth</li>
+    <li>Third</li>
+</ol>
+<h2>Tables</h2>
+
+<!-- NEW TAGS FOR ME : thead tbody  -->
+ <table>
+     <thead>
+<tr>
+    <th>Name</th>
+    <th>Roll no. </th>
+    <th>Occupation</th>
+</tr>
+     </thead>
+     <tbody>
+         <tr>
+             <td>Saksham</td>
+             <td>18</td>
+             <td>Coder</td>
+         </tr>
+
+     </tbody>
+ </table>
+ <!-- Here we will start forms -->
+ <h2>This is a form tutorial</h2> 
+ <!-- here we will use div tag not br -->
+ <form method="post" action="mailto:saggarwal.1709@gmail.com">
+     <div>
+     <label for="name"> Name: </label>
+          <input type ="text"name="myName" id="name" value="write your name">
+    </div>
+    <br>
+    <div>
+<label for="roll no">Roll no:</label>
+     
+        <input type ="text"name="myRollno" id="roll no">
+     </div>
+     <br>
+<!-- here we used input:email instead of putting a tag -->
+<div>
+<label for="email">Email:</label>
+    
+         <input type="email" name="myEmail" id="email">
+    </div>
+    <br>
+    <div>
+    <label for="date">Date :</label>
+    
+        <input type="date" name="myDate" id="date" >
+    </div>
+    <br>
+    <div>
+    <label for="fees">Fees</label>
+    
+         <input type="number" name="myFees" id="fees">
+    </div>
+        <br>
+        <div>
+        <label for="occupation">Are you a student? </label>
+    
+        <!-- Here we can also add checked attribute  -->
+          <input type="checkbox" name="myOccupation"  id="occupation">
+        </div>
+        <br>
+        <div>
+        <label for="gender">Gender:</label>
+       
+          Male   <input type="radio" name="myGender" id="gender"> FeMale  <input type="radio" name="myGender"id="gender" > 
+         Other <input type="radio" name="myGender" id="gender" >
+        </div>
+        <br>
+        <div>
+        <label for="bio"> 
+            Write about youreself</label>
+        
+        <textarea name="mytext" cols="30" rows="10" id="bio"></textarea>
+        </div>
+        <br>
+        <div><fieldset>
+            <legend>THIS IS OPTIONAL</legend>
+            <label for="car"> Car</label>
+            <!-- Here i have used select tag option attribute -->
+            <select name="myCar" id="car">
+                <!-- selected is used to show tata as the default option  -->
+                <option value="tata" selected>TATA</option>
+                <option value="hyn">HYUNDAI</option>
+                <option value="ms">MARUTI SUZUKI</option>
+            </select>
+            </fieldset>
+            </div>
+            <br>
+    <div>
+        
+            <input type="submit" value ="Submit now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+
+    <h2>Inline and Block elements </h2>
+<p style ="border :2px  solid  red">This is a paragraph</p>
+<p style ="border :2px solid  blue">This is also a paragraph</p>
+
+    <span style ="border :2px  solid  red">This is a span </span>
+    <span style ="border :2px  solid  blue">This is also a span  </span>
+    
+    <strong style ="border :2px  solid  red">This is a strong </strong>
+<strong style ="border :2px solid  blue">This is also a strong </strong>
+
+    <a style ="border :2px  solid  red">This is a anchor <a>
+    <a style ="border :2px  solid  blue">This is also a anchor  </a>
+
+    <h2>IDs and Classes</h2>
+    <!-- there is only 1 id of 1 element but various classes  -->
+<div id ="mainBox" class="redBg blackBorder"> hi</div>
+
+<!-- Emmet -->
+<!-- . is for class and # is for id span.redBG , span#mainspan  -->
+<span class="redBg"></span>
+<span id="mainspan"></span>
+
+<!-- emmet takes div tag as defaut  -->
+<!-- write only .blackbg to get div tag  -->
+
+<div class="blackbg"></div>
+
+<!-- Creating multiple elements using Emmet  -->
+
+<!-- span.myClass.myClass2.myClass3 + <Tab> to print 4 similar elements using Emmet  -->
+<!-- span.myClass.myClass2.myClass3*4   -->
+<span class="myClass myClass2 myClass3">First</span>
+<span class="myClass myClass2 myClass3">Second</span>
+<span class="myClass myClass2 myClass3">Third</span>
+<span class="myClass myClass2 myClass3">Fourth</span>
+
+<h2>HTML Entities</h2>
+<div class="container">
+    <!-- Different SYMBOLS  -->
+    <p>This is a paragraph</p>
+    <p>This is a paragraph with  p tag  pound copy right half  &lt;p&gt; &pound; &copy; &frac12;</p>
+    <p>This is also a &nbsp; paragraph</p>
+    <p>Empty character is written like this &#8203; </p>
+</div>
+
+<h1>Semantic Elements </h1>
+<strong>A riddle for u😀😀😀</strong>
+<details>
+    <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?
+       
+    </summary>
+    A keyboard.
+</details>
+
+
+
+</body>
+</html>

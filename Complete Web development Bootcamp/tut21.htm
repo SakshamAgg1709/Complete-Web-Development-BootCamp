@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Media Query</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+        'navbar navbar navbar navbar' 
+        'section section section aside'
+        'footer footer footer footer ';
+        }
+
+        @media only screen and (max-width:500px) {
+            body {
+
+                background-color: cornflowerblue;
+            }
+            .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+        'navbar navbar navbar navbar' 
+        'section section section section'
+        'footer footer footer footer ';
+            }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+        
+        }
+
+        @media only screen and (min-width: 501px) and (max-width:1100px) {
+            body {
+
+                background-color: blueviolet;
+            }
+
+            .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+        'navbar navbar navbar navbar' 
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer ';
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+        }
+
+        @media only screen and (min-width: 1101px) and (max-width:1800px) {
+            body {
+
+                background-color: rgb(25, 194, 53);
+            }
+        }
+
+        @media only screen and (min-width: 1801px) {
+            body {
+
+                background-color: rgb(211, 247, 9);
+            }
+        }
+
+        .bdr {
+            border: 4x solid black;
+            padding: 23px;
+            background-color: rgb(241, 170, 38);
+
+        }
+
+        nav{
+        grid-area: navbar;
+    }
+    section{
+        grid-area: section;
+    }
+    aside{
+        grid-area: aside;
+    }
+   footer{
+            grid-area: footer;
+            text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About us </span>
+            <span>Contact us</span>
+            <span>Info.</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in hindi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magni sapiente officia laudantium maiores. Deleniti et expedita numquam perferendis quo a cumque quos minima est quibusdam similique, hic maxime eius. Odit corporis quas commodi repellendus aperiam quidem iste accusantium consectetur reprehenderit tempore dolores neque suscipit asperiores nesciunt amet eum sint, assumenda tenetur laudantium porro velit delectus, perferendis consequuntur blanditiis! Unde, consequatur eligendi. Sequi dicta quam voluptatibus officia, natus, quo enim corporis suscipit nesciunt voluptatem nam voluptate? Reprehenderit assumenda, at qui explicabo tenetur voluptas nihil? Fugit odit possimus dignissimos optio alias at quis ratione eveniet corrupti sequi numquam nemo magnam molestiae nobis totam perspiciatis eligendi laboriosam itaque exercitationem, tenetur saepe dicta placeat et. Rerum ex quam assumenda explicabo natus! Impedit, aliquid accusantium. Soluta harum veritatis aliquam nulla, illo illum cupiditate magni!</p>
+        </section>
+        <aside class="bdr">
+            <h1>More About us</h1>
+        </aside>
+
+        <footer class="bdr">Copywright saksham2020</footer>
+    </div>
+</body>
+
+</html>

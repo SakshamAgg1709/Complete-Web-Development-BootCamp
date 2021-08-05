@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript SetTimeOut and ClearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is Javascript Tutorial 33")
+
+        // setTimeout--> Allows us to run a function once after a interval of time;
+        // clearTimeout-->Allows us to run a function repeatedly after a interval of time;
+
+        function greet(name,byeText) {
+            console.log("Hello good morning" + name +" " + byeText);
+            }
+            // setTimeout(greet , 1000, " Saksham", "Take Care");
+// timeOut = setTimeout(greet , 1000, " Saksham", "Take Care");
+
+// console.log(timeOut);
+// // setTimeout(greet() , 2000)--> It is wrong as it is callimg a function inside
+
+// clearTimeout(timeOut);
+
+// IntervalID = setInterval(greet , 2000 , " Saksham" , " GoodNight  ");
+
+// clearInterval(IntervalID);
+
+function displayTime(params) {
+    time = new Date();
+    console.log(time);
+    document.getElementById("time").innerHTML = time;
+}
+
+setInterval(displayTime, 1000);
+    </script>
+</body>
+</html>

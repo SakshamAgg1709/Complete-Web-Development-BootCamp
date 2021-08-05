@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Variables / Custom property</title>
+    <style>
+        :root{
+            --primary-color:rgb(223, 155, 29);
+            --danger-color:blue;
+            --maxwi:433px;
+        }
+.box{
+    
+    width: 200px;
+    height: 200px;
+    background-color: var(--primary-color);
+border: 2px solid red;
+box-shadow: 3px 3px  var(--danger-color);
+margin: 2px 9px;
+}
+    
+    .container{
+        margin :auto;
+        max-width: var(--maxwi);
+        display: flex;
+        background-color: var(--box-color)
+       
+        /* here below properties will not work  */
+        align-items : center; 
+        justify-content : center;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

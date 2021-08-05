@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Practice </title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: blueviolet;
+            border: 2px solid burlywood;
+
+        }
+
+        #para {
+            background-color: cadetblue;
+            border: 2px solid red;
+            border-radius: 20px;
+            font-size: 45px;
+            }
+
+            #dim{
+                display: inline;
+                background-color: chartreuse;
+                }
+    </style>
+</head>
+
+<body>
+    <div id="dim"><span id="time"></span></div>
+    <div class="container">
+        <h1>YO YO</h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quisquam a labore iusto! Nisi
+            itaque, sint labore odio expedita vitae totam ducimus hic vero autem nihil ipsa alias eum voluptas, atque
+            fugit, quidem eaque inventore perferendis voluptates? Rem, aliquam autem voluptatibus eveniet quas nihil
+            voluptatem, hic sunt laudantium, maxime blanditiis.</p>
+    </div>
+
+    <button id="btn" onclick="togglehide()" mouseover="run()">Show/hide </button>
+
+
+    <script>
+            let para =document.getElementById('para');
+      para.addEventListener('mouseover' , function run() {
+          console.log('mouse inside para')
+      })
+       
+      para.addEventListener('mouseout' , function run() {
+          console.log('mouse now went outside');
+      })
+      
+
+        function  togglehide() {
+            let   btn =document.getElementById('btn') ;     
+               let para =document.getElementById('para');
+        
+               if (para.style.display != 'none') {
+                para.style.display='none';
+               } else {
+                para.style.display='block';
+               }
+        }
+        
+        
+        
+        
+        function uptime() {
+            time.innerHTML= new Date();
+        }
+
+        setInterval(uptime, 1000);
+    </script>
+</body>
+
+</html>

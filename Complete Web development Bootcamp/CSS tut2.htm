@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TUTORIAL</title>
+    <style>
+        
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        p{
+            font-family:'Times New Roman', Times, serif;
+            font-size: 15px;
+            line-height: 2em;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+#firstPara{
+    color: blueviolet;
+}
+#secondPara{
+    /* color picking through rgb  */
+    color: rgb(68, 5, 73);
+}
+
+#thirdPara{
+    color:#ff9900;
+    background-color: rgb(40, 55, 77);
+}
+
+#bgC{
+    background-color: blueviolet;
+    height: 100px;
+    width: 900px;
+    border: 2px solid green;
+    /* border-color: green;
+    border-width: 4px;
+    border-style: solid; */
+    border-radius: 30px   40px  0 50px;
+}
+#bgA{
+    background-color:rgba(113, 13, 228, 0.753);
+    height: 100px;
+    width: 900px;
+    border-top: 10px solid rgb(18, 167, 13);
+    border-right: 10px solid  rgb(35, 19, 104);
+    border-left:  10px solid rgb(18, 167, 13);
+    border-bottom:10px solid  rgb(18, 167, 13);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius:  5px;
+
+}
+
+#bgb{
+    background-color:rgba(113, 13, 228, 0.753);
+    height: 500px;
+    width: 400px;
+    background-image:  url('https://lh3.googleusercontent.com/ogw/ADGmqu95qFR6hwDo-5bY0jX8o3rpwLObDYvb6aPBkKzn=s32-c-mo');
+    border: 2px solid red;
+    
+    /* how to stop the repeating of image  */
+    /* repeat x and repeat y will repeAT the image in x and y axis  */
+    background-repeat: no-repeat;
+    /* we can also write the position in px  */
+    background-position: center center;
+}
+
+body{
+    background-color:rgb(231, 162, 205);
+}
+
+    .container{
+background-color: rgb(174 189 14);
+border: 3px solid rgb(85, 81, 100);
+
+/* all the comments below can be set on both margin and padding  */
+/* we can set padding and margin in left right top and bottom 
+padding top: 15px; */
+/* padding * top right bottom left;
+padding : 20px 30px 15px 25px; */
+/* padding: y(top/bottom) x(left/right); */
+
+padding: 30px 40px;
+margin:15px 40px;
+border-radius: 30px ;
+width: 500px;
+box-sizing: border-box;
+
+    }
+
+    #first{
+
+    }
+
+    #second{
+
+    }
+    #third{
+
+    }
+    </style>
+
+</head>
+<body>
+    <h3>Css Fonts</h3>
+    <p>We will learn about css fonts</p>
+    <h2>Colors in CSS</h2>
+   
+    <h2>This is my first box</h2>
+    <p id="firstPara">This is a Paragraph of my first box</p>
+    
+    <h2>This is my second box</h2>
+    <p id="secondPara">This is a Paragraph of my second box</p>
+    
+    <h2>This is my third box</h2>
+    <p id="thirdPara">This is a Paragraph of my third box</p>
+    
+
+    <h1>Borders and backgrounds</h1>
+<p id="bgC"> This is a Paragraph.</p>
+<p id="bgA"> This is my second Paragraph.</p>
+<p id="bgb"> This is my third Paragraph.</p>
+
+<h2>Box Model </h2>
+<div class="container">
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus exercitationem corporis culpa ut harum vel adipisci laboriosam molestias numquam eaque corrupti, quasi beatae velit nisi quas optio blanditiis ea sint facilis cum accusamus sequi iusto tenetur dolore? Quisquam vel expedita nihil, nobis, rem, et doloribus ducimus voluptatem illo consectetur unde!</p>
+
+
+</div>
+<div class="container">
+    <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus exercitationem corporis culpa ut harum vel adipisci laboriosam molestias numquam eaque corrupti, quasi beatae velit nisi quas optio blanditiis ea sint facilis cum accusamus sequi iusto tenetur dolore? Quisquam vel expedita nihil, nobis, rem, et doloribus ducimus voluptatem illo consectetur unde!</p>
+
+
+</div>
+<div class="container">
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus exercitationem corporis culpa ut harum vel adipisci laboriosam molestias numquam eaque corrupti, quasi beatae velit nisi quas optio blanditiis ea sint facilis cum accusamus sequi iusto tenetur dolore? Quisquam vel expedita nihil, nobis, rem, et doloribus ducimus voluptatem illo consectetur unde!</p>
+
+
+</div>
+
+</body>
+</html>

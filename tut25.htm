@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions</title>
+</head>
+<body>
+    
+
+    <script>
+        var str = "This is a string"
+        console.log(str);
+
+    //    Index count always start from 0
+
+        // First occurence of  a substring like 'is' is on 2nd place in the string str  
+        var position = str.indexOf('is');
+        console.log(position)
+        // Last occurence of  a substring like 'is' is on 2nd place in the string str  
+         position = str.lastIndexOf('is');
+        console.log(position)
+
+        // Substring from a string 
+
+        // This will print 1st 2nd 3rd 4th 5th and 6th character from the string str
+        var substr = str.slice(1,7);
+
+console.log(substr)
+
+        // It will also print the same but difference between slice and substring is that slice can take -ve values but substring can't take negative values
+        var substr2 = str.substring(-1,7);
+       console.log(substr2)
+       
+    //    It will start from 1st and extract the substrings till 7th position
+        var substr1 = str.substr(1,7)
+        var substr1 = str.substr(1,3);
+        console.log(substr1);
+
+
+        var replaced = str.replace("string" , "Saksham")
+        console.log(str)
+        console.log(replaced)
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newstring = str.concat('New String')
+        console.log(newstring)
+
+        var strwithwhitespace = "     This contains whitespaces      "
+        console.log(strwithwhitespace);
+        // It will remove the white spaces only at the beginning and the end    
+        console.log(strwithwhitespace.trim());
+
+var char3 = str.charAt(2);
+var char3 = str.charCodeAt(2);
+console.log(char3);
+
+console.log(str[3]);
+        
+
+    </script>
+</body>
+</html>
